@@ -1,6 +1,11 @@
 html, body {
     height: 100%;
 }
+
+#navbar {
+    background-image: linear-gradient(#455a64, #000, #455a64);
+}
+
 label {
     /*font-family: 'Luckiest Guy', cursive;*/
     /*font-family: 'Titan One', cursive;*/
@@ -64,7 +69,7 @@ p:nth-child(1) a:hover {
 
 .container1 {
     position: relative;
-    /*top: 50%;*/
+    /*top: 100%;*/
     transform: translateY(300%); /* changed to get loading in the center of screen */
     text-align: center;
     font-family: 'Titan One', cursive;
@@ -88,9 +93,10 @@ p:nth-child(1) a:hover {
 #moviePoster {
     width: 100%;
     border: solid black 1px;
-    height: 50vh;
+    height: 55vh;
     margin-bottom: 1em;
     background-image: radial-gradient(circle, dodgerblue, #90a4ae, black);
+    /*margin: 0;*/
 }
 
 /*glow for webkit*/
@@ -125,6 +131,14 @@ p:nth-child(1) a:hover {
     font-family: 'Titan One', cursive;
     margin-left: 1em;
     font-size: 30px;
+    background: -webkit-linear-gradient(#eee, #00e5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h4 {
+    background: -webkit-linear-gradient(#00e5ff, #00e5ff, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .intro:first-of-type {
@@ -163,7 +177,147 @@ p:nth-child(1) a:hover {
     100% {opacity:0;width:500px;}
 }
 
-/*
+.cssload-loader {
+    width: 300px;
+    height: 50px;
+    line-height: 49px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    font-family: helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size:20px;
+    color: rgb(206,66,51);
+    letter-spacing: 0.2em;
+}
 
- */
+.cssload-loader::before, .cssload-loader::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: rgb(206,66,51);
+    position: absolute;
+    animation: cssload-load 0.81s infinite alternate ease-in-out;
+    -o-animation: cssload-load 0.81s infinite alternate ease-in-out;
+    -ms-animation: cssload-load 0.81s infinite alternate ease-in-out;
+    -webkit-animation: cssload-load 0.81s infinite alternate ease-in-out;
+    -moz-animation: cssload-load 0.81s infinite alternate ease-in-out;
+}
+
+.cssload-loader::before {
+    top: 100px;
+}
+
+.cssload-loader::after {
+    bottom: 100;
+}
+
+/*loading*/
+@keyframes
+cssload-load {
+    0% {
+        left: 0;
+        height: 29px;
+        width: 15px;
+    }
+
+    50% {
+        height: 8px;
+        width: 39px;
+    }
+
+    100% {
+        left: 229px;
+        height: 29px;
+        width: 15px;
+    }
+
+}
+
+@-o-keyframes cssload-load {
+    0% {
+        left: 0;
+        height: 29px;
+        width: 15px;
+    }
+
+    50% {
+        height: 8px;
+        width: 39px;
+    }
+
+    100% {
+        left: 229px;
+        height: 29px;
+        width: 15px;
+    }
+
+}
+
+@-ms-keyframes cssload-load {
+    0% {
+        left: 0;
+        height: 29px;
+        width: 15px;
+    }
+
+    50% {
+        height: 8px;
+        width: 39px;
+    }
+
+    100% {
+        left: 229px;
+        height: 29px;
+        width: 15px;
+    }
+
+}
+
+@-webkit-keyframes cssload-load {
+    0% {
+        left: 0;
+        height: 29px;
+        width: 15px;
+    }
+
+    50% {
+        height: 8px;
+        width: 39px;
+    }
+
+    100% {
+        left: 229px;
+        height: 29px;
+        width: 15px;
+    }
+
+}
+
+@-moz-keyframes cssload-load {
+    0% {
+        left: 0;
+        height: 29px;
+        width: 15px;
+    }
+
+    50% {
+        height: 8px;
+        width: 39px;
+    }
+
+    100% {
+        left: 229px;
+        height: 29px;
+        width: 15px;
+    }
+
+}
 
