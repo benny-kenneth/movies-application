@@ -79,6 +79,8 @@ populateMovies();
 // Edits movies
 $('#selectMovieToEdit').click(function (e) {
     e.preventDefault(e);
+    $('#movieToEditTitle').val('');
+    $('#movieToEditRating').val('');
     getMovies().then((movies => {
         let movieToEdit = $('#moviesToEdit').val();
         let selectedMovie = movies.filter(movie => {

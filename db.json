@@ -7,28 +7,22 @@
       "id": 30
     },
     {
-      "title": "Jaws",
+      "title": "The Mummy",
       "rating": "3",
-      "genre": "suspense",
+      "genre": "action",
       "id": 33
     },
     {
-      "title": "Spiderman",
+      "title": "Spiderman 2",
       "rating": "5",
       "genre": "epics/historical",
       "id": 35
     },
     {
-      "title": "Spiderman 2",
+      "title": "Spiderman 3",
       "rating": "5",
-      "genre": "superhero",
+      "genre": "epics/historical",
       "id": 36
-    },
-    {
-      "title": "The Mummy",
-      "rating": "3",
-      "genre": "action",
-      "id": 37
     },
     {
       "title": "The Scorpion King",
